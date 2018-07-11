@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NaJ-zR-Inc">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gem Selection-->
+        <scene sceneID="X5r-QJ-gs1">
+            <objects>
+                <tableViewController storyboardIdentifier="westernAstrology" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NaJ-zR-Inc" customClass="WesternAstrology" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uwj-B7-zJG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="nPj-Rs-HeR">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nPj-Rs-HeR" id="OSd-oa-sGL">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NaJ-zR-Inc" id="TRh-OR-XkS"/>
+                            <outlet property="delegate" destination="NaJ-zR-Inc" id="AP2-1R-NVe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Gem Selection" id="2P1-cW-PLt"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XVa-86-RSY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1268" y="351"/>
+        </scene>
+        <!--DatePopUp-->
+        <scene sceneID="o9Y-89-32U">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DatePopUp" id="B0H-iD-eY3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u4i-fo-6b3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2738" y="351"/>
+        </scene>
+        <!--Western Astrology Output-->
+        <scene sceneID="Uvc-os-vlC">
+            <objects>
+                <viewController storyboardIdentifier="Output" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Hk-kq-o8N" customClass="WesternAstrologyOutput" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Meg-CF-Zxf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sqo-2L-ixS">
+                                <rect key="frame" x="0.0" y="62" width="320" height="506"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GbT-TU-bpe">
+                                <rect key="frame" x="16" y="87" width="281" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2x-RN-yA2">
+                                <rect key="frame" x="14" y="136" width="139" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="hDB-i9-gYD"/>
+                                </constraints>
+                                <state key="normal" title="Set Birth Date">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="B0H-iD-eY3" kind="presentation" identifier="toDate" modalPresentationStyle="overCurrentContext" id="hZR-rk-2fj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjq-sQ-Lss">
+                                <rect key="frame" x="166" y="136" width="139" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Set Birth Time">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="B0H-iD-eY3" kind="presentation" identifier="toTime" modalPresentationStyle="overCurrentContext" id="B1o-PD-xgi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DD/MM/YYYY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1e-PT-4zS">
+                                <rect key="frame" x="16" y="206" width="142" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIZ-3H-2DZ">
+                                <rect key="frame" x="117" y="269" width="86" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="GO!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goButtonPressed:" destination="6Hk-kq-o8N" eventType="touchUpInside" id="MYS-EQ-67g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HH:MM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbw-ZP-P4y">
+                                <rect key="frame" x="166" y="211" width="142" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="etn-by-lWh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sqo-2L-ixS" secondAttribute="trailing" id="0qK-MV-M3r"/>
+                            <constraint firstItem="sqo-2L-ixS" firstAttribute="bottom" secondItem="Drl-xa-YLD" secondAttribute="bottom" id="14R-PJ-t6F"/>
+                            <constraint firstItem="YIZ-3H-2DZ" firstAttribute="leading" secondItem="Drl-xa-YLD" secondAttribute="leading" constant="117" id="7Dv-4H-mcI"/>
+                            <constraint firstItem="J2x-RN-yA2" firstAttribute="top" secondItem="GbT-TU-bpe" secondAttribute="bottom" constant="19" id="84N-Ye-mXG"/>
+                            <constraint firstItem="nbw-ZP-P4y" firstAttribute="leading" secondItem="N1e-PT-4zS" secondAttribute="trailing" constant="8" id="8XL-5b-Vqf"/>
+                            <constraint firstItem="sqo-2L-ixS" firstAttribute="centerX" secondItem="YIZ-3H-2DZ" secondAttribute="centerX" id="Asd-t7-AKr"/>
+                            <constraint firstItem="Vjq-sQ-Lss" firstAttribute="leading" secondItem="J2x-RN-yA2" secondAttribute="trailing" constant="13" id="DFQ-mC-qUF"/>
+                            <constraint firstItem="GbT-TU-bpe" firstAttribute="top" secondItem="Drl-xa-YLD" secondAttribute="top" constant="67" id="JIV-Nh-MrW"/>
+                            <constraint firstItem="sqo-2L-ixS" firstAttribute="leading" secondItem="Meg-CF-Zxf" secondAttribute="leading" id="NSm-to-hUQ"/>
+                            <constraint firstItem="Drl-xa-YLD" firstAttribute="trailing" secondItem="GbT-TU-bpe" secondAttribute="trailing" constant="23" id="O5V-v1-88f"/>
+                            <constraint firstItem="sqo-2L-ixS" firstAttribute="top" secondItem="Drl-xa-YLD" secondAttribute="top" constant="42" id="Qwi-CU-mNI"/>
+                            <constraint firstItem="YIZ-3H-2DZ" firstAttribute="top" secondItem="nbw-ZP-P4y" secondAttribute="bottom" constant="27" id="SHo-SY-OeU"/>
+                            <constraint firstItem="N1e-PT-4zS" firstAttribute="leading" secondItem="GbT-TU-bpe" secondAttribute="leading" id="TjM-EQ-bYJ"/>
+                            <constraint firstItem="GbT-TU-bpe" firstAttribute="leading" secondItem="Drl-xa-YLD" secondAttribute="leading" constant="16" id="ZSw-C6-4xa"/>
+                            <constraint firstItem="J2x-RN-yA2" firstAttribute="baseline" secondItem="Vjq-sQ-Lss" secondAttribute="baseline" id="equ-WS-ZEX"/>
+                            <constraint firstItem="YIZ-3H-2DZ" firstAttribute="centerY" secondItem="Meg-CF-Zxf" secondAttribute="centerY" id="iCv-9w-rZi"/>
+                            <constraint firstItem="Vjq-sQ-Lss" firstAttribute="leading" secondItem="nbw-ZP-P4y" secondAttribute="leading" id="m1G-A1-5w1"/>
+                            <constraint firstItem="Drl-xa-YLD" firstAttribute="trailing" secondItem="nbw-ZP-P4y" secondAttribute="trailing" constant="12" id="ni6-48-ggK"/>
+                            <constraint firstItem="Drl-xa-YLD" firstAttribute="trailing" secondItem="Vjq-sQ-Lss" secondAttribute="trailing" constant="15" id="ous-tY-DTC"/>
+                            <constraint firstItem="J2x-RN-yA2" firstAttribute="leading" secondItem="Drl-xa-YLD" secondAttribute="leading" constant="14" id="pkM-AJ-LP9"/>
+                            <constraint firstItem="YIZ-3H-2DZ" firstAttribute="top" secondItem="N1e-PT-4zS" secondAttribute="bottom" constant="22" id="urK-oa-J7u"/>
+                            <constraint firstItem="N1e-PT-4zS" firstAttribute="firstBaseline" secondItem="nbw-ZP-P4y" secondAttribute="firstBaseline" constant="-5" id="xAP-9B-xpk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Drl-xa-YLD"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="N1e-PT-4zS" id="C33-ii-7Ow"/>
+                        <outlet property="goButtojn" destination="YIZ-3H-2DZ" id="bLp-aK-nbA"/>
+                        <outlet property="nameTextField" destination="GbT-TU-bpe" id="wa7-C8-yTk"/>
+                        <outlet property="setDatebutton" destination="J2x-RN-yA2" id="COu-ap-oa0"/>
+                        <outlet property="setTimeButton" destination="Vjq-sQ-Lss" id="Lhd-Fx-woX"/>
+                        <outlet property="textView" destination="sqo-2L-ixS" id="RWf-QU-sG6"/>
+                        <outlet property="timeLabel" destination="nbw-ZP-P4y" id="uE3-cT-jAg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4WK-8M-fLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2094" y="351"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="B1o-PD-xgi"/>
+    </inferredMetricsTieBreakers>
+</document>

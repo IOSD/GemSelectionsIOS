@@ -7,15 +7,18 @@ target 'GemSelection' do
 
   # Pods for GemSelection
 
-  pod 'Firebase/Core'
-  pod 'Firebase/Auth'
-  pod 'Firebase/Database'
-  pod 'DropDown'
-  pod 'GoogleSignIn'
-  pod 'Firebase/Storage'
-  pod 'FacebookCore'
-  pod 'FacebookLogin'
-pod 'FirebaseUI/Storage'
-pod 'MarqueeLabel'
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'DropDown'
+    pod 'GoogleSignIn'
+    pod 'Firebase/Storage'
+    pod 'FacebookCore'
+    pod 'FacebookLogin'
+    pod 'FirebaseUI/Storage'
+    pod 'MarqueeLabel'
+    
 
 end
