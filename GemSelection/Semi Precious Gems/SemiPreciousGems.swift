@@ -50,7 +50,7 @@ class SemiPreciousGems: UITableViewController {
         return 1
     }
 
-    func showDropDown(){
+    @objc func showDropDown(){
         dropDown.show()
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

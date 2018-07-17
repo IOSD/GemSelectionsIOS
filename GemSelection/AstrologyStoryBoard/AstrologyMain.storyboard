@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gem Selection-->
+        <scene sceneID="oTn-UQ-4LA">
+            <objects>
+                <viewController storyboardIdentifier="astrology" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gMZ-Fi-Y0q" customClass="AstrolgyMainViewController" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rhR-bI-MB5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Astrology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmj-lJ-LoK">
+                                <rect key="frame" x="6" y="27" width="115" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mU0-FW-6hT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="match" translatesAutoresizingMaskIntoConstraints="NO" id="gYD-1i-4ir">
+                                <rect key="frame" x="1" y="109" width="319" height="85"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Match Making" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DS-Z5-Tbo">
+                                <rect key="frame" x="6" y="170" width="115" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="Gc8-Pe-Pei"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyv-Gh-EFR" userLabel="Match">
+                                <rect key="frame" x="1" y="85" width="319" height="109"/>
+                                <connections>
+                                    <action selector="matchMakin:" destination="gMZ-Fi-Y0q" eventType="touchUpInside" id="Dxo-IM-8Hj"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="western" translatesAutoresizingMaskIntoConstraints="NO" id="j9D-t6-IZ4">
+                                <rect key="frame" x="0.0" y="203" width="318" height="85"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Western Astrology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vN0-ci-dHJ">
+                                <rect key="frame" x="6" y="256" width="147" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="IIv-N1-QmE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXL-H2-TJy" userLabel="Western">
+                                <rect key="frame" x="0.0" y="203" width="320" height="85"/>
+                                <connections>
+                                    <action selector="westernAstrology:" destination="gMZ-Fi-Y0q" eventType="touchUpInside" id="ggv-aw-f9G"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="daily-horoscope" translatesAutoresizingMaskIntoConstraints="NO" id="hWw-eK-UC2">
+                                <rect key="frame" x="0.0" y="294" width="320" height="85"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Horoscope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9h-xc-cNd">
+                                <rect key="frame" x="1" y="360" width="138" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="H0n-9n-sNx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2J5-oK-463" userLabel="Daily">
+                                <rect key="frame" x="1" y="297" width="319" height="85"/>
+                                <connections>
+                                    <action selector="dailyHoroscope:" destination="gMZ-Fi-Y0q" eventType="touchUpInside" id="NiK-6U-rA2"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indianAstr" translatesAutoresizingMaskIntoConstraints="NO" id="qkc-KO-DOO">
+                                <rect key="frame" x="0.0" y="405" width="318" height="85"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2Q-hi-L9I">
+                                <rect key="frame" x="0.0" y="403" width="320" height="85"/>
+                                <connections>
+                                    <action selector="indianAstrology:" destination="gMZ-Fi-Y0q" eventType="touchUpInside" id="p77-gC-5dn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indian Astrology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYU-V3-f81">
+                                <rect key="frame" x="1" y="448" width="135" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="6hp-bZ-oKn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wyv-Gh-EFR" firstAttribute="top" secondItem="jmj-lJ-LoK" secondAttribute="bottom" constant="18" id="0rW-pw-Aps"/>
+                            <constraint firstAttribute="bottom" secondItem="bYU-V3-f81" secondAttribute="bottom" constant="20" symbolic="YES" id="8gv-Ds-2k7"/>
+                            <constraint firstItem="jmj-lJ-LoK" firstAttribute="top" secondItem="Q59-W4-lnE" secondAttribute="top" constant="27" id="9C3-lk-J0g"/>
+                            <constraint firstItem="aXL-H2-TJy" firstAttribute="leading" secondItem="j9D-t6-IZ4" secondAttribute="leading" id="9U9-HC-4ZS"/>
+                            <constraint firstItem="d2Q-hi-L9I" firstAttribute="top" secondItem="f9h-xc-cNd" secondAttribute="bottom" constant="20" id="9hl-EM-kbs"/>
+                            <constraint firstItem="gYD-1i-4ir" firstAttribute="trailing" secondItem="aXL-H2-TJy" secondAttribute="trailing" id="9lZ-dJ-eSq"/>
+                            <constraint firstItem="vN0-ci-dHJ" firstAttribute="top" secondItem="Wyv-Gh-EFR" secondAttribute="bottom" constant="62" id="BR0-VQ-RbA"/>
+                            <constraint firstItem="2J5-oK-463" firstAttribute="leading" secondItem="f9h-xc-cNd" secondAttribute="leading" id="LAy-lg-TGO"/>
+                            <constraint firstItem="j9D-t6-IZ4" firstAttribute="top" secondItem="Wyv-Gh-EFR" secondAttribute="bottom" constant="9" id="LqP-DS-Ekq"/>
+                            <constraint firstItem="Q59-W4-lnE" firstAttribute="bottom" secondItem="d2Q-hi-L9I" secondAttribute="bottom" constant="16" id="Obj-du-EHv"/>
+                            <constraint firstItem="aXL-H2-TJy" firstAttribute="leading" secondItem="hWw-eK-UC2" secondAttribute="leading" id="P3r-ji-fTI"/>
+                            <constraint firstItem="hWw-eK-UC2" firstAttribute="top" secondItem="j9D-t6-IZ4" secondAttribute="bottom" constant="6" id="P4I-qx-Ag3"/>
+                            <constraint firstItem="j9D-t6-IZ4" firstAttribute="leading" secondItem="rhR-bI-MB5" secondAttribute="leading" id="Pj5-y7-z6k"/>
+                            <constraint firstItem="gYD-1i-4ir" firstAttribute="leading" secondItem="2J5-oK-463" secondAttribute="leading" id="Pm9-Cr-hyf"/>
+                            <constraint firstItem="jmj-lJ-LoK" firstAttribute="leading" secondItem="Q59-W4-lnE" secondAttribute="leading" constant="6" id="WEP-ge-hpl"/>
+                            <constraint firstItem="hWw-eK-UC2" firstAttribute="top" secondItem="vN0-ci-dHJ" secondAttribute="bottom" constant="20" id="Xva-4j-QNK"/>
+                            <constraint firstItem="Q59-W4-lnE" firstAttribute="trailing" secondItem="vN0-ci-dHJ" secondAttribute="trailing" constant="167" id="Zci-wH-iru"/>
+                            <constraint firstItem="aXL-H2-TJy" firstAttribute="trailing" secondItem="hWw-eK-UC2" secondAttribute="trailing" id="aii-oH-xmh"/>
+                            <constraint firstItem="Q59-W4-lnE" firstAttribute="trailing" secondItem="bYU-V3-f81" secondAttribute="trailing" constant="184" id="au7-jF-0a4"/>
+                            <constraint firstItem="hWw-eK-UC2" firstAttribute="leading" secondItem="d2Q-hi-L9I" secondAttribute="leading" id="bhe-CO-sZe"/>
+                            <constraint firstItem="j9D-t6-IZ4" firstAttribute="trailing" secondItem="qkc-KO-DOO" secondAttribute="trailing" id="cg0-Ma-jaN"/>
+                            <constraint firstItem="4DS-Z5-Tbo" firstAttribute="leading" secondItem="vN0-ci-dHJ" secondAttribute="leading" id="d0C-kH-ipb"/>
+                            <constraint firstItem="Q59-W4-lnE" firstAttribute="trailing" secondItem="j9D-t6-IZ4" secondAttribute="trailing" constant="2" id="d66-Tm-gS6"/>
+                            <constraint firstItem="d2Q-hi-L9I" firstAttribute="leading" secondItem="qkc-KO-DOO" secondAttribute="leading" id="d9I-to-eof"/>
+                            <constraint firstItem="Wyv-Gh-EFR" firstAttribute="trailing" secondItem="gYD-1i-4ir" secondAttribute="trailing" id="dr9-Qc-f6I"/>
+                            <constraint firstItem="d2Q-hi-L9I" firstAttribute="top" secondItem="2J5-oK-463" secondAttribute="bottom" constant="21" id="e33-cH-sZg"/>
+                            <constraint firstItem="j9D-t6-IZ4" firstAttribute="top" secondItem="4DS-Z5-Tbo" secondAttribute="bottom" constant="16" id="fwb-YU-lab"/>
+                            <constraint firstItem="bYU-V3-f81" firstAttribute="top" secondItem="f9h-xc-cNd" secondAttribute="bottom" constant="65" id="g2C-0y-Mda"/>
+                            <constraint firstItem="gYD-1i-4ir" firstAttribute="top" secondItem="jmj-lJ-LoK" secondAttribute="bottom" constant="42" id="il9-Hk-EV7"/>
+                            <constraint firstItem="hWw-eK-UC2" firstAttribute="trailing" secondItem="2J5-oK-463" secondAttribute="trailing" id="kKi-0Z-pwY"/>
+                            <constraint firstItem="2J5-oK-463" firstAttribute="trailing" secondItem="d2Q-hi-L9I" secondAttribute="trailing" id="leQ-gN-KwY"/>
+                            <constraint firstItem="d2Q-hi-L9I" firstAttribute="top" secondItem="hWw-eK-UC2" secondAttribute="bottom" constant="24" id="mGc-Yv-noT"/>
+                            <constraint firstItem="aXL-H2-TJy" firstAttribute="bottom" secondItem="j9D-t6-IZ4" secondAttribute="bottom" id="nrr-bv-Ckz"/>
+                            <constraint firstItem="f9h-xc-cNd" firstAttribute="top" secondItem="j9D-t6-IZ4" secondAttribute="bottom" constant="72" id="oVe-t3-q1M"/>
+                            <constraint firstItem="Q59-W4-lnE" firstAttribute="bottom" secondItem="qkc-KO-DOO" secondAttribute="bottom" constant="14" id="oXE-9R-Pec"/>
+                            <constraint firstItem="hWw-eK-UC2" firstAttribute="centerX" secondItem="2J5-oK-463" secondAttribute="centerX" id="okh-OC-1JA"/>
+                            <constraint firstItem="jmj-lJ-LoK" firstAttribute="trailing" secondItem="4DS-Z5-Tbo" secondAttribute="trailing" id="pZ4-Sy-L17"/>
+                            <constraint firstItem="Wyv-Gh-EFR" firstAttribute="leading" secondItem="gYD-1i-4ir" secondAttribute="leading" id="rdc-Xt-xBw"/>
+                            <constraint firstAttribute="trailing" secondItem="Wyv-Gh-EFR" secondAttribute="trailing" id="sJs-xW-WDj"/>
+                            <constraint firstItem="jmj-lJ-LoK" firstAttribute="leading" secondItem="4DS-Z5-Tbo" secondAttribute="leading" id="sSb-Q6-0Ip"/>
+                            <constraint firstItem="qkc-KO-DOO" firstAttribute="top" secondItem="f9h-xc-cNd" secondAttribute="bottom" constant="22" id="tqZ-sI-ZzW"/>
+                            <constraint firstItem="2J5-oK-463" firstAttribute="top" secondItem="j9D-t6-IZ4" secondAttribute="bottom" constant="9" id="xkw-0j-vP0"/>
+                            <constraint firstItem="Q59-W4-lnE" firstAttribute="trailing" secondItem="f9h-xc-cNd" secondAttribute="trailing" constant="181" id="yNR-Xc-frm"/>
+                            <constraint firstItem="j9D-t6-IZ4" firstAttribute="top" secondItem="gYD-1i-4ir" secondAttribute="bottom" constant="9" id="ywF-Rr-XdB"/>
+                            <constraint firstItem="j9D-t6-IZ4" firstAttribute="top" secondItem="aXL-H2-TJy" secondAttribute="top" id="zBD-S2-zzx"/>
+                            <constraint firstItem="f9h-xc-cNd" firstAttribute="leading" secondItem="bYU-V3-f81" secondAttribute="leading" id="zfb-14-M3e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Q59-W4-lnE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gem Selection" id="1Pf-1d-1Hk">
+                        <barButtonItem key="leftBarButtonItem" image="ic_menu" id="ygh-3M-xIH">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="menuBtn" destination="ygh-3M-xIH" id="96u-FX-51x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BvK-e4-8aC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2257.5" y="2169.7183098591549"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="daily-horoscope" width="655" height="360"/>
+        <image name="ic_menu" width="24" height="24"/>
+        <image name="indianAstr" width="225" height="225"/>
+        <image name="match" width="225" height="225"/>
+        <image name="western" width="280" height="280"/>
+    </resources>
+</document>

@@ -73,10 +73,16 @@ class GetHoroscope: UIViewController, UITableViewDataSource, UITableViewDelegate
         if tableView == self.signTableView{
         signString = signArray[indexPath.row]
             signSelectedLabel.text = "Selected : \(signString)"
+             selectSignButton.setTitle(signString, for: .normal)
+            self.signView.removeFromSuperview()
+            
             
         }else{
             spanString = spanArray[indexPath.row]
             spanSelectedLabel.text = "Selected : \(spanString)"
+            print("change")
+            selectSpanButton.setTitle(spanString, for: .normal)
+
             switch indexPath.row {
             case 0: value = 0
                     break
@@ -88,6 +94,7 @@ class GetHoroscope: UIViewController, UITableViewDataSource, UITableViewDelegate
             default:
                  value = 0
             }
+            self.spanView.removeFromSuperview()
         }
     }
     
@@ -143,7 +150,7 @@ class GetHoroscope: UIViewController, UITableViewDataSource, UITableViewDelegate
         activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
         view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
-        UIApplication.shared.beginIgnoringInteractionEvents()
+       
         
         Alamofire.request(url, method: .post, headers: headers).responseJSON { (response) in
            
@@ -159,44 +166,44 @@ class GetHoroscope: UIViewController, UITableViewDataSource, UITableViewDelegate
                 
             }
             recieved = "Profession : \(profession) \n\n Health : \(health) \n\n Personal : \(personal) \n\n Emotions : \(emotions) \n\n Luck : \(luck) \n\n Travel : \(travel)"
-            
+            print("Fetched")
             self.textView.text = recieved
         }
-        UIApplication.shared.endIgnoringInteractionEvents()
+        
         activityIndicator.stopAnimating()
         
     }
     
-    @IBAction func horoscopeButtonPressed(_ sender: UIButton) {
-        self.spanView.removeFromSuperview()
-        if sender.tag == 0 {
-            if signString == " "{
-                print("Nothing Selected")
-            }
-            else{
-                selectSignButton.setTitle(signString, for: .normal)
-            }
-            
-        }
-        self.signView.removeFromSuperview()
-        
-    }
-    
-    @IBAction func spanviewButtonPressed(_ sender: UIButton) {
-        signView.removeFromSuperview()
-        if sender.tag == 0 {
-            if spanString == " "{
-                print("Nothing Selected")
-            }
-            else{
-                print("change")
-                selectSpanButton.setTitle(spanString, for: .normal)
-            }
-            
-        }
-        self.spanView.removeFromSuperview()
-        
-        
-    }
+//    @IBAction func horoscopeButtonPressed(_ sender: UIButton) {
+//        self.spanView.removeFromSuperview()
+//        if sender.tag == 0 {
+//            if signString == " "{
+//                print("Nothing Selected")
+//            }
+//            else{
+//                selectSignButton.setTitle(signString, for: .normal)
+//            }
+//            
+//        }
+//        self.signView.removeFromSuperview()
+//        
+//    }
+//    
+//    @IBAction func spanviewButtonPressed(_ sender: UIButton) {
+//        signView.removeFromSuperview()
+//        if sender.tag == 0 {
+//            if spanString == " "{
+//                print("Nothing Selected")
+//            }
+//            else{
+//                print("change")
+//                selectSpanButton.setTitle(spanString, for: .normal)
+//            }
+//            
+//        }
+//        self.spanView.removeFromSuperview()
+//        
+//        
+//    }
     
 }

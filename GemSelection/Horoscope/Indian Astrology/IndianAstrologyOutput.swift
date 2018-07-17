@@ -192,7 +192,7 @@ class IndianAstrologyOutput: UIViewController, UITableViewDelegate, UITableViewD
         activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
         view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
-        UIApplication.shared.beginIgnoringInteractionEvents()
+
         
         let params : [String : AnyObject] = ["day":day as AnyObject,
             "month":month as AnyObject,
@@ -210,9 +210,121 @@ class IndianAstrologyOutput: UIViewController, UITableViewDelegate, UITableViewD
             if let response = response.result.value {
                 let data : JSON = JSON(response)
                 print("aaaaaaaaa\(data)")
-                self.textView.text = data.rawString()
+                
+                //self.textView.text = data.rawString()
+                
+                switch self.selectedIndex {
+                case 0:
+                    let houseReport = data["house_report"].rawString()
+                    let planet = data["planet"].rawString()
+                    self.textView.text = "House Report : \(houseReport ?? "Could not fetch") \n\n Planet : \(planet ?? "Couldnot fetch")"
+                    
+                    break
+                case 1:
+                    
+                    let asc_report = data["asc_report"]
+                    let ascendant = asc_report["ascendant"].rawString()
+                    let report = asc_report["report"].rawString()
+                    
+                     self.textView.text = "Ascendanr : \(ascendant ?? "Could not fetch") \n\n Report : \(report ?? "Couldnot fetch")"
+                    
+                    break
+                case 2:
+                    self.textView.text = data.rawString()
+                    
+                    break
+                case 3:
+                    
+                    let name = data[0]["name"].rawString()
+                    let nakshatra = data[0]["nakshatra"].rawString()
+                    let house = data[0]["house"].rawString()
+                    let planetAwastha = data[0]["planet_awastha"].rawString()
+                    let sign = data[0]["sign"].rawString()
+                    let normDegree = data[0]["normDegree"].rawString()
+                    let nakshtraLord = data[0]["nakshatraLord"].rawString()
+                    let speed = data[0]["speed"].rawString()
+                    let fullDegree = data[0]["fullDegree"].rawString()
+                    
+                    self.textView.text = "Name : \(name ?? "Could not fetch") \n Nakshatra : \(nakshatra ?? "Couldnot fetch") \n House : \(house ?? "Couldnot fetch" ) \n Planet Awastha : \(planetAwastha ?? "Couldnot fetch") \n Sign : \(sign ?? "Couldnot fetch") \n NormDegree: \(normDegree ?? "Couldnot fetch") \n Nakshatra Lord : \(nakshtraLord ?? "Couldnot fetch") \n Speed : \(speed ?? "Couldnot fetch") \n Full Degree : \(fullDegree ?? "Couldnot fetch")"
+                    
+                    break
+                case 5:
+                    let name = data["name"].rawString()
+                    let oneLine = data["one_line"].rawString()
+                    let report = data["report"]["report"].rawString()
+                    let type = data["type"].rawString()
+                    
+                   self.textView.text = "Name : \(name ?? "Could not fetch") \n\n One Line : \(oneLine ?? "Couldnot fetch") \n\n Report : \(report ?? "Couldnot fetch" ) \n \n Type : \(type ?? "Couldnot fetch") \n"
+                    break
+                case 4:
+                    let rashiReport = data["rashi_report"].rawString()
+                    let planet = data["planet"].rawString()
+                    self.textView.text = "House Report : \(rashiReport ?? "Could not fetch") \n\n Planet : \(planet ?? "Couldnot fetch")"
+                    break
+                case 6:
+                    let rashiReport = data["rashi_report"].rawString()
+                    let planet = data["planet"].rawString()
+                    self.textView.text = "House Report : \(rashiReport ?? "Could not fetch") \n\n Planet : \(planet ?? "Couldnot fetch")"
+                    break
+                case 7:
+                    
+                    let nadi = data["Nadi"].rawString()
+                    let nakshatra = data["Naksahtra"].rawString()
+                    let vashya = data["Vashya"].rawString()
+                    let ascendant = data["ascendant"].rawString()
+                    let signLord = data["SignLord"].rawString()
+                    let paya = data["paya"].rawString()
+                    let yoni = data["Yoni"].rawString()
+                    let karan = data["Karan"].rawString()
+                    let gan = data["Gan"].rawString()
+                    let tithi = data["Tithi"].rawString()
+                    let sign = data["sign"].rawString()
+                    let varna = data["Varna"].rawString()
+                    let nameAlphabet = data["name_alphabet"].rawString()
+                    let nakshtraLord = data["NaksahtraLord"].rawString()
+                    let tatva = data["tatva"].rawString()
+                    let yunja = data["yunja"].rawString()
+                    let churan = data["Charan"].rawString()
+                    let yog = data["Yog"].rawString()
+                    
+                    
+                    self.textView.text = "Nadi : \(nadi ?? "Could not fetch") \n Naksahtra : \(nakshatra ?? "Could not fetch") \n Vashya : \(vashya ?? "Could not fetch") \n Ascendant : \(ascendant ?? "Could not fetch") \n Sign Lord : \(signLord ?? "Could not fetch") \n Paya : \(paya ?? "Could not fetch") \n  Yoni : \(yoni ?? "Could not fetch") \n  Karan : \(karan ?? "Could not fetch") \n  Gan : \(gan ?? "Could not fetch") \n  Tithi : \(tithi ?? "Could not fetch") \n  Sign : \(sign ?? "Could not fetch") \n  Varna : \(varna ?? "Could not fetch") \n  Name Alphabet : \(nameAlphabet ?? "Could not fetch") \n  Naksahtra Lord : \(nakshtraLord ?? "Could not fetch") \n  Tatva  : \(tatva ?? "Could not fetch") \n  Yunja : \(yunja ?? "Could not fetch") \n  Churan : \(churan ?? "Could not fetch") \n  Yog : \(yog ?? "Could not fetch") \n "
+                    
+                    break
+                case 8:
+                    let name = data[0]["name"].rawString()
+                    let nakshatra = data[0]["nakshatra"].rawString()
+                    let house = data[0]["house"].rawString()
+                    let planetAwastha = data[0]["planet_awastha"].rawString()
+                    let sign = data[0]["sign"].rawString()
+                    let normDegree = data[0]["normDegree"].rawString()
+                    let nakshtraLord = data[0]["nakshatraLord"].rawString()
+                    let speed = data[0]["speed"].rawString()
+                    let fullDegree = data[0]["fullDegree"].rawString()
+                    
+                    self.textView.text = "Name : \(name ?? "Could not fetch") \n Nakshatra : \(nakshatra ?? "Couldnot fetch") \n House : \(house ?? "Couldnot fetch" ) \n Planet Awastha : \(planetAwastha ?? "Couldnot fetch") \n Sign : \(sign ?? "Couldnot fetch") \n NormDegree: \(normDegree ?? "Couldnot fetch") \n Nakshatra Lord : \(nakshtraLord ?? "Couldnot fetch") \n Speed : \(speed ?? "Couldnot fetch") \n Full Degree : \(fullDegree ?? "Couldnot fetch")"
+                    break
+                case 9:
+                    self.textView.text = data.rawString()
+                    break
+                case 10:
+                    self.textView.text = data.rawString()
+                    break
+                case 11:
+                    self.textView.text = data.rawString()
+                    break
+                case 12:
+                    self.textView.text = data.rawString()
+                    break
+                case 13:
+                    self.textView.text = data.rawString()
+                    break
+                    
+                default: self.textView.text = "Could Not Fetch Data"
+                    
+                }
         }
-        UIApplication.shared.endIgnoringInteractionEvents()
+        
         activityIndicator.stopAnimating()
         
         

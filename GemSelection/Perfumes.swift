@@ -33,7 +33,7 @@ class perfumetable: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
-    func kholde(){
+    @objc func kholde(){
         ShowWebView(urll: "https://khannagems.com/")
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -100,7 +100,7 @@ var perfumeDetails = [""]
         } else {
         return perfumeImages.count
         }
-    };func kholde(){
+    };@objc func kholde(){
         ShowWebView(urll: "https://khannagems.com/")
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

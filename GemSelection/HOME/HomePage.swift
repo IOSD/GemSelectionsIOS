@@ -270,7 +270,7 @@ extension String{
     func convertHtml() -> NSAttributedString{
         guard let data = data(using: .utf8) else { print("\nNhai ho paya\n"); return NSAttributedString() }
         do{
-            return try NSAttributedString(data: data, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType, NSCharacterEncodingDocumentAttribute: String.Encoding.utf8.rawValue], documentAttributes: nil)
+            return try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil)
         }catch{
             print("\nbilkul nahi ho paya\n")
             return NSAttributedString()

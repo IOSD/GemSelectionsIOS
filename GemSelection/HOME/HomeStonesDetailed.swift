@@ -113,13 +113,13 @@ class HomeStonesDetailed: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
-    func showDropDownType(){
+    @objc func showDropDownType(){
         dropDownType.show()
     }
-    func showDropDownQuantity(){
+    @objc func showDropDownQuantity(){
         dropDownQuantityPrice.show()
     }
-    func showDropDownQuantity2(){
+    @objc func showDropDownQuantity2(){
         dropDownQuantityPrice2.show()
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

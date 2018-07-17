@@ -49,7 +49,7 @@ class Kavach: UITableViewController {
         return 2
     }
 
-    func openShop(){
+    @objc func openShop(){
          UIApplication.shared.open(URL(string: "https:khannagems.com/")!, options: [:], completionHandler: nil)
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

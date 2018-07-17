@@ -103,7 +103,7 @@ class FaqPopUp: UIViewController,UITableViewDelegate,UITableViewDataSource{
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
     }
-    func back(){
+    @objc func back(){
         self.navigationController?.popViewController(animated: true)
         isfaqcomingfromHome = false
     }

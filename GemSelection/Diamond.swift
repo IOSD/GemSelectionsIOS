@@ -14,7 +14,7 @@ lazy var text  = ""
     @IBAction func buyNow(_ sender: Any) {
         ShowWebView(urll: "https://khannagems.com/")
     }
-    func back(){
+    @objc func back(){
         self.navigationController?.popViewController(animated: true)
         isDiamondcomingFromHomePage = false
     }

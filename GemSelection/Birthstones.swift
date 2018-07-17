@@ -76,7 +76,7 @@ class Birthstones: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-    func showDropDown(){
+    @objc func showDropDown(){
         dropDown.show()
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

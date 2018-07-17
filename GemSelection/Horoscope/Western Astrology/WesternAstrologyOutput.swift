@@ -171,7 +171,7 @@ class WesternAstrologyOutput: UIViewController {
         activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
         view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
-        UIApplication.shared.beginIgnoringInteractionEvents()
+   
         
         let params : [String : AnyObject] = ["day":day as AnyObject,
                                              "month":month as AnyObject,
@@ -190,8 +190,10 @@ class WesternAstrologyOutput: UIViewController {
                 let data : JSON = JSON(response)
                 print("aaaaaaaaa\(data)")
                 self.textView.text = data.rawString()
+                
+                
             }
-            UIApplication.shared.endIgnoringInteractionEvents()
+      
             activityIndicator.stopAnimating()
             
             

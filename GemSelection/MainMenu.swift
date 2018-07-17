@@ -57,7 +57,7 @@ class MainMenu: UITableViewController,MFMailComposeViewControllerDelegate {
         
     }
 
-    func signOutUser(){
+    @objc func signOutUser(){
         let firebaseAuth = Auth.auth()
         do {
             try firebaseAuth.signOut()

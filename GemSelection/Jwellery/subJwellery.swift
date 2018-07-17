@@ -69,7 +69,7 @@ let notificationNme = NSNotification.Name("NotificationIdf")
   
     }
     let activity = UIActivityIndicatorView();var currentImages = [UIImage]()
-    func checkDB(){
+    @objc func checkDB(){
         if currentImages.count == ActualNumberOfImages[whichDiamondToShow]
         {
          activity.removeFromSuperview()
