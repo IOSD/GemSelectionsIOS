@@ -91,6 +91,22 @@ class FaqPopUp: UIViewController,UITableViewDelegate,UITableViewDataSource{
         ShowWebView(urll: "https://khannagems.com/")
 
     }
+    
+    @IBAction func whileBuying(_ sender: Any) {
+        value = "RyxQ1DsK4Kg"
+        tableView.reloadData()
+    }
+    
+    @IBOutlet var tableView: UITableView!
+    @IBAction func buyinDelhi(_ sender: Any) {
+        value = "1W8xZ-D-Gpo"
+        tableView.reloadData()
+    }
+    
+    @IBAction func purchasingGems(_ sender: Any) {
+        value = "mdOWDD0YA7c"
+        tableView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         if self.revealViewController() != nil {
@@ -102,6 +118,26 @@ class FaqPopUp: UIViewController,UITableViewDelegate,UITableViewDataSource{
                 (SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+    }
+    
+    
+    @IBAction func wearGems(_ sender: Any) {
+        value = "TByLvRR0oLk"
+        tableView.reloadData()
+    }
+    
+    @IBAction func gemWork(_ sender: Any) {
+        value = "DRZfRX9YKmU"
+        tableView.reloadData()
+    }
+    
+    @IBAction func identifySapphire(_ sender: Any) {
+        value = "0q_Dy1xjrLY"
+        tableView.reloadData()
+    }
+    @IBAction func pearlsCare(_ sender: Any) {
+        value = "RB4rEmG0b5c"
+        tableView.reloadData()
     }
     @objc func back(){
         self.navigationController?.popViewController(animated: true)
@@ -131,12 +167,12 @@ class FaqPopUp: UIViewController,UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
-    
+    var value = "mdOWDD0YA7c"
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "webrow", for: indexPath) as! webrowinfaq
             let width = self.view.frame.width-20 ; let height = self.view.frame.height/3
-            cell._webView.loadHTMLString("<iframe width=\"\(359)\" height=\"\(139)\" src=\"https://www.youtube.com/embed/exSOLLQKZEM\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
+            cell._webView.loadHTMLString("<iframe width=\"\(359)\" height=\"\(139)\" src=\"https://www.youtube.com/embed/\(value)\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "faqrow", for: indexPath)
@@ -149,7 +185,7 @@ class FaqPopUp: UIViewController,UITableViewDelegate,UITableViewDataSource{
         if indexPath.row == 0 {
             return 150
         } else {
-            return 5400
+            return 350
         }
     }
     

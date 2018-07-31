@@ -665,7 +665,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="cBy-gT-hsG" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="mNU-gK-TcR"/>
+                                    <segue destination="cBy-gT-hsG" kind="custom" trigger="accessoryAction" customClass="SWRevealViewControllerSeguePushController" id="lwX-xJ-9MS"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="preciousgemstonerow" id="tX6-Lo-66q">
@@ -1271,100 +1271,21 @@
             </objects>
             <point key="canvasLocation" x="6381.5625" y="2111.6197183098593"/>
         </scene>
-        <!--My Account-->
+        <!--View Controller-->
         <scene sceneID="Kqq-pM-01T">
             <objects>
-                <viewController id="Fbu-Kn-kz3" customClass="MyAccountViewController" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Fbu-Kn-kz3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VRS-fm-Fjv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deepak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kB-Nj-8bF">
-                                <rect key="frame" x="132" y="84.5" width="172" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="deepak@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZw-Pz-OKc">
-                                <rect key="frame" x="16" y="228.5" width="172" height="25.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="Grk-wD-C6w"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person_add_grey_72x72" translatesAutoresizingMaskIntoConstraints="NO" id="lLM-4t-dvr">
-                                <rect key="frame" x="13" y="77.5" width="90" height="72"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="JU4-g4-aYb"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eF0-ec-E49">
-                                <rect key="frame" x="0.0" y="195.5" width="320" height="36"/>
-                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="qE1-mw-8M4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" red="0.41136579949238583" green="0.41136579949238583" blue="0.41136579949238583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change My Password  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNJ-Fx-xGJ">
-                                <rect key="frame" x="0.0" y="261.5" width="297" height="25.5"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" red="0.41136579950000002" green="0.41136579950000002" blue="0.41136579950000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vX8-Xo-cTu">
-                                <rect key="frame" x="297" y="261.5" width="21" height="25.5"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="21" id="JAl-U7-TMH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" red="0.41136579950000002" green="0.41136579950000002" blue="0.41136579950000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="hZw-Pz-OKc" firstAttribute="top" secondItem="lLM-4t-dvr" secondAttribute="bottom" constant="79" id="4Wa-zf-mSE"/>
-                            <constraint firstItem="CNJ-Fx-xGJ" firstAttribute="firstBaseline" secondItem="vX8-Xo-cTu" secondAttribute="firstBaseline" id="4ka-Cm-MTx"/>
-                            <constraint firstItem="CNJ-Fx-xGJ" firstAttribute="top" secondItem="eF0-ec-E49" secondAttribute="bottom" constant="30" id="5xd-T1-m04"/>
-                            <constraint firstItem="lLM-4t-dvr" firstAttribute="leading" secondItem="RAo-oc-tY5" secondAttribute="leading" constant="13" id="AJ2-pr-vok"/>
-                            <constraint firstItem="vX8-Xo-cTu" firstAttribute="leading" secondItem="CNJ-Fx-xGJ" secondAttribute="trailing" id="Bfd-ge-p0F"/>
-                            <constraint firstItem="RAo-oc-tY5" firstAttribute="bottom" secondItem="hZw-Pz-OKc" secondAttribute="bottom" constant="289" id="Bx5-Tk-OZe"/>
-                            <constraint firstAttribute="trailing" secondItem="eF0-ec-E49" secondAttribute="trailing" id="CAT-BM-tHU"/>
-                            <constraint firstItem="RAo-oc-tY5" firstAttribute="trailing" secondItem="vX8-Xo-cTu" secondAttribute="trailing" constant="2" id="FO9-A1-pcf"/>
-                            <constraint firstItem="CNJ-Fx-xGJ" firstAttribute="baseline" secondItem="vX8-Xo-cTu" secondAttribute="baseline" id="GbV-2j-pf0"/>
-                            <constraint firstItem="hZw-Pz-OKc" firstAttribute="leading" secondItem="VRS-fm-Fjv" secondAttribute="leadingMargin" id="HFn-if-x97"/>
-                            <constraint firstItem="5kB-Nj-8bF" firstAttribute="trailing" secondItem="VRS-fm-Fjv" secondAttribute="trailingMargin" id="LZG-JB-QmQ"/>
-                            <constraint firstItem="eF0-ec-E49" firstAttribute="leading" secondItem="CNJ-Fx-xGJ" secondAttribute="leading" id="O2D-7y-sJ5"/>
-                            <constraint firstItem="lLM-4t-dvr" firstAttribute="top" secondItem="RAo-oc-tY5" secondAttribute="top" constant="13" id="Qav-kP-bgN"/>
-                            <constraint firstItem="5kB-Nj-8bF" firstAttribute="top" secondItem="RAo-oc-tY5" secondAttribute="top" constant="20" id="RFU-p7-eZt"/>
-                            <constraint firstItem="RAo-oc-tY5" firstAttribute="bottom" secondItem="CNJ-Fx-xGJ" secondAttribute="bottom" constant="256" id="WnF-CL-yJm"/>
-                            <constraint firstItem="eF0-ec-E49" firstAttribute="top" secondItem="lLM-4t-dvr" secondAttribute="bottom" constant="46" id="a3p-mf-Plf"/>
-                            <constraint firstItem="RAo-oc-tY5" firstAttribute="trailing" secondItem="hZw-Pz-OKc" secondAttribute="trailing" constant="132" id="kl8-z3-UyY"/>
-                            <constraint firstItem="eF0-ec-E49" firstAttribute="top" secondItem="5kB-Nj-8bF" secondAttribute="bottom" constant="90" id="qNV-km-Fou"/>
-                            <constraint firstItem="5kB-Nj-8bF" firstAttribute="leading" secondItem="lLM-4t-dvr" secondAttribute="trailing" constant="29" id="rRy-dd-n7T"/>
-                            <constraint firstItem="eF0-ec-E49" firstAttribute="leading" secondItem="VRS-fm-Fjv" secondAttribute="leading" id="yiN-38-a3x"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RAo-oc-tY5"/>
                     </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="My Account" id="sRg-mW-0Io">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu" id="4Tb-8q-bn1"/>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="menuBtn" destination="4Tb-8q-bn1" id="go0-jW-cja"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="sRg-mW-0Io"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZn-f2-j02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8106" y="1853"/>
+            <point key="canvasLocation" x="8033" y="1846"/>
         </scene>
         <!--Connect With Us-->
         <scene sceneID="ghq-aK-7Xe">
@@ -2793,7 +2714,7 @@ Cg
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sf9-9Q-cW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8486" y="2673"/>
+            <point key="canvasLocation" x="8865" y="2655.6338028169016"/>
         </scene>
         <!--Yantras-->
         <scene sceneID="hLm-Va-Asp">
@@ -4615,7 +4536,7 @@ Then to recharge it take it off one week before Mahashivratri day and follow the
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8wU-EP-Xhd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2835" y="4309"/>
+            <point key="canvasLocation" x="2576" y="4454"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9js-pe-AZx">
@@ -8581,7 +8502,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="7350" y="1845"/>
+            <point key="canvasLocation" x="7260" y="1845"/>
         </scene>
     </scenes>
     <resources>
@@ -8644,7 +8565,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
         <segue reference="edC-m0-78k"/>
         <segue reference="BVk-Lg-ivb"/>
         <segue reference="f61-XW-1RG"/>
-        <segue reference="qKN-K6-VYu"/>
+        <segue reference="WbO-Hf-BGX"/>
         <segue reference="OZS-50-oiM"/>
         <segue reference="1Im-7x-4g6"/>
     </inferredMetricsTieBreakers>

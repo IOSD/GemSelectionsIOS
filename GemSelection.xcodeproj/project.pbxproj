@@ -41,6 +41,7 @@
 		00F6AB471FFFD362003907B5 /* Extra.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F6AB451FFFD362003907B5 /* Extra.xib */; };
 		00F6AB4D200003B8003907B5 /* Kavach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6AB4C200003B8003907B5 /* Kavach.swift */; };
 		00F85A0D201883C800796A8B /* SemiPreciousGemsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F85A0C201883C800796A8B /* SemiPreciousGemsData.swift */; };
+		3A2CFF09210F36EA001C7555 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2CFF08210F36EA001C7555 /* MyAccountViewController.swift */; };
 		3A660A0720F1165D008EDF6C /* GetHoroscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A660A0620F1165D008EDF6C /* GetHoroscope.swift */; };
 		3AB905EB20F8ACDA00EAEDB3 /* AstrologyMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB905EA20F8ACDA00EAEDB3 /* AstrologyMain.storyboard */; };
 		3AF62FFF20F338FC005BBC2D /* IndianAstrology.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF62FFE20F338FC005BBC2D /* IndianAstrology.storyboard */; };
@@ -113,6 +114,7 @@
 		00F6AB451FFFD362003907B5 /* Extra.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Extra.xib; sourceTree = "<group>"; };
 		00F6AB4C200003B8003907B5 /* Kavach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kavach.swift; sourceTree = "<group>"; };
 		00F85A0C201883C800796A8B /* SemiPreciousGemsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiPreciousGemsData.swift; sourceTree = "<group>"; };
+		3A2CFF08210F36EA001C7555 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		3A660A0620F1165D008EDF6C /* GetHoroscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHoroscope.swift; sourceTree = "<group>"; };
 		3AB905EA20F8ACDA00EAEDB3 /* AstrologyMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AstrologyMain.storyboard; sourceTree = "<group>"; };
 		3ACC03413D291C75AAB1EDC2 /* Pods-GemSelection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemSelection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GemSelection/Pods-GemSelection.debug.xcconfig"; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 				F15C797020C84C45009ACFA3 /* FAQScreens */,
 				0037B19F200FA40E003697BA /* HOME */,
 				4668A3F41F9FE63100CB64A7 /* AppDelegate.swift */,
+				3A2CFF08210F36EA001C7555 /* MyAccountViewController.swift */,
 				466859611FAF4AB700340BDB /* MainMenu.swift */,
 				00F343F61FFD511300CF03D9 /* ConnectWithUs.swift */,
 				00F6AB4C200003B8003907B5 /* Kavach.swift */,
@@ -573,6 +576,7 @@
 				F1BF857520C6F8C500881604 /* ReturnPlicyViewController.swift in Sources */,
 				0042D7BA20012FBE00DF8722 /* Japamala,saphticitems,stoneidols.swift in Sources */,
 				F1548F4020CA8ABF0082602D /* PearlViewController.swift in Sources */,
+				3A2CFF09210F36EA001C7555 /* MyAccountViewController.swift in Sources */,
 				00176EBB20123785009E92B8 /* JwelleryMain.swift in Sources */,
 				00176ECD201394A2009E92B8 /* RudrakshaPopupView.swift in Sources */,
 				F1548F4820CA8B890082602D /* WhereToBuyViewController.swift in Sources */,

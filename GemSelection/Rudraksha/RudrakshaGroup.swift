@@ -52,7 +52,7 @@ class RudrakshaHome: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "singlecell", for: indexPath) as! rudrakshahomecell
-        cell.webView.loadHTMLString("<iframe width=\"\(cell.webView.frame.size.width)\" height=\"\(cell.webView.frame.size.height)\" src=\"https://www.youtube.com/embed//0SMvY7ko5NA\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
+        cell.webView.loadHTMLString("<iframe width=\"\(cell.webView.frame.size.width)\" height=\"\(cell.webView.frame.size.height)\" src=\"https://www.youtube.com/embed//Qd1hHh_vEkA\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
 
         cell.webView.scrollView.isScrollEnabled = false
         return cell

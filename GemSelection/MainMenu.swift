@@ -13,7 +13,7 @@ import Firebase
 var isloggedin:Int = 0
 class MainMenu: UITableViewController,MFMailComposeViewControllerDelegate {
     var handle: AuthStateDidChangeListenerHandle? ;  var ref: DatabaseReference!
-    var rowIdentifierssection1 = ["loginrow","preciousgemstonerow","diamondrow","jwelleryrow", "astrology","semipreciousgemsrow","triangulargemsrow","cabochonrow","birthstonesrow","gemstonesandastrologyrow","gemstonerecommendationrow","rudraksharow","handicraftsrow","perfumerow","stoneidolsrow","yantrarow","saphaticitemsrow","japamalarow","kavachrow","faqrow"]
+    var rowIdentifierssection1 = ["loginrow","myAccount","preciousgemstonerow","diamondrow","jwelleryrow", "astrology","semipreciousgemsrow","triangulargemsrow","cabochonrow","birthstonesrow","gemstonesandastrologyrow","gemstonerecommendationrow","rudraksharow","handicraftsrow","perfumerow","stoneidolsrow","yantrarow","saphaticitemsrow","japamalarow","kavachrow","faqrow"]
     var rowIdentifierssection2 = ["connectwithusrow","callusrow","mailusrow","visitusrow"]
     var rowIdentifierssection3 = ["sharerow","rateapprow"]
     
